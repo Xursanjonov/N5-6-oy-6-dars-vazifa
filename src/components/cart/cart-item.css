@@ -1,0 +1,8 @@
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0 0 3px gray;
+}

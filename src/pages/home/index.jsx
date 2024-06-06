@@ -6,7 +6,7 @@ import { Button } from '@mui/material'
 import './home.css'
 
 const Home = () => {
-    const [limit, setLimit] = useState(10)
+    const [limit, setLimit] = useState(8)
     const getProducts = useGetProductsQuery()
     const { data, isLoading } = getProducts
     const alldata = data?.products;
@@ -30,10 +30,10 @@ const Home = () => {
                     )
                 }
                 {
-                    limit === 30 ? <></> : (
-                        <Button onClick={() => setLimit(p => p + 5)} variant="outlined"
+                    limit === 28 ? <></> : (
+                        <Button onClick={() => setLimit(p => p + 4)} variant="outlined"
                             sx={{ margin: '0 auto', fontWeight: 700, padding: '.8rem 1rem', fontSize: 18 }}>
-                            Show +8 products
+                            Show +4 products
                         </Button>
                     )
                 }
